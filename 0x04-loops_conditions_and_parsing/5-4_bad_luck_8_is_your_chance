@@ -2,7 +2,7 @@
 # script uses while loop to display Best School, bad luck, good luck
 n=1
 
-while [ $n -lt 10 ]
+while [ $n -le 10 ]
 do
 	if [ $n -eq 4 ]
 	then

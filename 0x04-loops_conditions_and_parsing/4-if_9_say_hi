@@ -4,10 +4,10 @@ n=0
 
 while [ $n -lt 10 ]
 do
-	echo "Best School"
-	(( n++ ))
 	if [ $n -eq 8 ]
 	then
 		echo "Hi"
 	fi
+		echo "Best School"
+		(( n++ ))
 done
