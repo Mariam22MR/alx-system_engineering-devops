@@ -5,7 +5,7 @@
 #include <unistd.h>
 
 /**
- * infinite_while run- infinite while loop.
+ * infinite_while - run infinite while loop.
  *
  * Return: Always 0.
  */
@@ -20,7 +20,7 @@ int infinite_while(void)
 }
 
 /**
- * main- function creates 5 zombie processes.
+ * main - function creates 5 zombie processes.
  *
  * Return: Always 0.
  */
@@ -30,7 +30,7 @@ int main(void)
 	pid_t child_pid;
 	char i = 0;
 
-	while (i = 0; i < 5; i++)
+	for (i = 0; i < 5; i++)
 	{
 		child_pid = fork();
 		if (child_pid > 0)
