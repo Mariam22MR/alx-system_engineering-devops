@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# start Apache2 inside docer
+
+echo "Hello Holberton" >> /etc/apache2.conf
+service apache2 start
