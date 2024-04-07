@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# debug nginx port 80
 # Fixes nginx listening port and reloads nginx master process.
 
 sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
