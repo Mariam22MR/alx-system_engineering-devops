@@ -2,6 +2,6 @@
 # debug nginx port 80
 # Fixes nginx listening port and reloads nginx master process.
 
-echo -e "sed -iE 's/listen 8080/listen 80/g' /etc/nginx/sites-enabled/default\
-sed -i 's/listen \[::\]:8080/listen \[::\]:80/g' /etc/nginx/sites-enabled/default\n
-pgrep nginx -o > /run/nginx.pid\nnginx -s reload\necho''> /run/nginx.pid" | bash
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+sudo service nginx restart
+kill -9 "$(cat /var/run/nginx.pid)"
